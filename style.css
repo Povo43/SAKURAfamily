@@ -1,0 +1,61 @@
+/**桜サバの色
+　水色#1de3fe　黒#353334　桜色#fac6d0
+　75%水色　20%黒　5%桜色**/
+
+
+@charset 'utf-8';
+
+@font-face {
+    font-family: Zenkurenaido;
+    font-display: swap;
+    src: url("ZenKurenaido-Regular.ttf") format("TrueType");
+    }
+
+    body,html{
+        margin: 0;
+        font-family: 'Zenkurenaido', sans-serif;
+        font-size: 16px;
+    }
+
+    header{
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    }
+
+    header h1{
+        text-align: center;
+        font-size: 50px;
+        color: white;
+        padding: 10vh 0 10vh 0;
+        margin: 0;
+
+        background-image: linear-gradient(rgba(0, 0, 0, 0.400),rgba(0, 0, 0, 0.400)),url('./SAKURA.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        margin-top: 30vh;
+    }
+    
+    .about h3{
+        font-size: 26px;
+        display: inline;
+        padding: 0 10px 0 10px;
+        border-bottom: solid 3px #353334;
+        position: relative;
+    }
+        .about h3:after {
+            position: absolute;
+            content: " ";
+            display: block;
+            border-bottom: solid 3px #1de3fe;
+            bottom: -3px;
+            width: 20%;
+        }
+    
+    .about p{
+        margin-left: 10px;
+    }
